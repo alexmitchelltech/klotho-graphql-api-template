@@ -1,0 +1,9 @@
+# Dependencies
+node_modules/
+
+# Output Logs
+yarn-error.log
+
+# Compiled
+compiled/
+dist/
