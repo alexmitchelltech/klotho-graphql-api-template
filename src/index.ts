@@ -1,6 +1,6 @@
 /**
  * @klotho::execution_unit {
- *   id = "base-api"
+ *   id = "graphql-api"
  *   keep_warm = true
  *   [size]
  *   mem_mb = 128
@@ -10,10 +10,12 @@
 import * as express from 'express';
 
 import healthRouter from './routes/health';
+import graphqlRouter from './routes/graphql';
 
 const app = express();
 
 app.use(healthRouter);
+app.use(graphqlRouter);
 /* @klotho::expose {
  *  target = "public"
  * }
