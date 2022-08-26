@@ -4,7 +4,7 @@
   "description": "Template for GraphQL API using Klotho v1",
   "author": "Alex Mitchell <alex@alexmitchelltech.com>",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "nodemon src/index.ts",
     "build": "tsc"
   },
   "devDependencies": {

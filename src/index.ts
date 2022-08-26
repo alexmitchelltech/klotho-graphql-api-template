@@ -17,6 +17,7 @@ const app = express();
 app.use(healthRouter);
 app.use(graphqlRouter);
 /* @klotho::expose {
+ *  id = "main"
  *  target = "public"
  * }
  */

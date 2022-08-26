@@ -1,6 +1,10 @@
 const formatGrantKey = (resourceID: string, userID: string) => `${resourceID}-${userID}`;
 
-// @klotho::persist
+/*
+ * @klotho::persist {
+ *   id = "grants"
+ * }
+ */
 const grantStore = new Map();
 
 export const checkGrant = async ({ input: { userID, resourceID } }) => {

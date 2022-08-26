@@ -6,10 +6,9 @@ import rootValue from './resolvers';
 
 const router = Router();
 
-router.use('/graphql', graphqlHTTP({
+router.get('/graphql', graphqlHTTP({
   schema,
   rootValue,
-  graphiql: true,
 }));
 
 export default router;
